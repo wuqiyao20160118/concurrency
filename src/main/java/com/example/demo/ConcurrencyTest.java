@@ -31,7 +31,7 @@ public class ConcurrencyTest {
                     add();
                     semaphore.release();
                 } catch (Exception e) {
-                    log.error("exception", e);
+                    log.error("exception", e);  // 加上Slf4j注解后可以使用log打印日志
                 }
                 countDownLatch.countDown();
             });
