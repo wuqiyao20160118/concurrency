@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/cache")
 public class CacheController {
 
+    // 自动装配注入
     @Autowired
     private RedisClient redisClient;
 
